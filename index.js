@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // 👉 Telegram Bot Config
-const BOT_TOKEN = "8707423311:AAEefXSk_H-zlBUYXMji-NO4F5Xyl9ScgDo";
+const BOT_TOKEN = process.env.BOT_TOKEN;
 
 // ✅ Home Route
 app.get("/", (req, res) => {
