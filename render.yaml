@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pro-api-bot
+    env: node
+    buildCommand: |
+      apt-get update
+      apt-get install -y ffmpeg
+      wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O yt-dlp
+      chmod +x yt-dlp
+      npm install
+    startCommand: node index.js
